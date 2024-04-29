@@ -7,7 +7,7 @@
   
   tasks :
   - name : using variables
-    ansible.builtin.bebug:
+    ansible.builtin.debug:
       msg : "Hi I am {{name}} learning {{course}} for {{time}} "
 
         
