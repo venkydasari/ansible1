@@ -3,13 +3,13 @@
   tasks:
     - name : play1
       ansible.builtin.debug:
-      msg : "hi i am frpm play1 and task1"
+        msg : "hi i am frpm play1 and task1"
 
 - name : Play2 and task1
   hosts : localhost
   tasks:
     - name : play2
       ansible.builtin.debug:
-      msg : "hi i am frpm play2 and task1 "    
+        msg : "hi i am frpm play2 and task1 "    
 
      
