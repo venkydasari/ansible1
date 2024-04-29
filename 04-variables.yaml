@@ -5,11 +5,11 @@
     name : "venkat"
     time : "120 hours"
   
-    tasks :
-       - name : using variables
-         ansible.builtin.bebug:
-          msg : "Hi I am {{name}} learning {{course}} for {{time}} "
-          
+  tasks :
+  - name : using variables
+    ansible.builtin.bebug:
+      msg : "Hi I am {{name}} learning {{course}} for {{time}} "
+
         
      
   
