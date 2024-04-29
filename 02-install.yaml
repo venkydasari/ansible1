@@ -1,5 +1,5 @@
 - name : install and run nginx
-  host : web
+  hosts : web
   become : yes # like -b sudo access adhoc command
   tasks :
     - name : install nginx server
