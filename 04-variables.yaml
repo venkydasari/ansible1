@@ -1,0 +1,15 @@
+- name : variables
+  hosts : localhost
+  vars: # declaring variable
+    course : "devops"
+    name : "venkat"
+    time : "120 hours"
+  
+    tasks :
+       - name : using variables
+         ansible.builtin.bebug:
+          msg : "Hi I am {{name}} learning {{course}} for {{time}} "
+          
+        
+     
+  
