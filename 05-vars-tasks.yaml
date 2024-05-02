@@ -1,0 +1,16 @@
+- name : declaring variables 
+  host : localhost
+  vars: 
+    course : "devops"
+    name : "venkat"
+    duration : "120"
+  task :  
+    - name : printing declared variable
+      ansible.builtin.debug:
+        msg : "Hi I am {{name}}, learning {{course}} for {{duration}}"
+
+    - name : printinging variables at task level
+      vars:
+        course : "terraform"
+      ansible.builtin.debug:
+        msg : "Hi I am {{name}}, learning {{course}} for {{duration}}"      
